@@ -41,5 +41,5 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel 
-          wget  https://github.com/EvilAnsh/kernel_realme_RM6785/raw/dragon-lto/build.sh
+          wget  https://github.com/EvilAnsh/kernel_realme_RM6785/raw/R/build.sh
           bash build.sh
