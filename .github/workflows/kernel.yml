@@ -41,5 +41,5 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel 
-          wget  https://raw.githubusercontent.com/No1really/ThunderstormReborn-RM6785/full-lto/build.sh
+          wget  https://github.com/EvilAnsh/ThunderstormReborn-RM6785/raw/full-lto/build.sh
           bash build.sh
