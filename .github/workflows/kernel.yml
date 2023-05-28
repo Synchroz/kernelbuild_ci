@@ -30,8 +30,8 @@ jobs:
 
       - name: Initializing environment
         run: |
-          git config --global user.name "Ansh"
-          git config --global user.email "singhansh64321@gmail.com"
+          git config --global user.name "Synchroz"
+          git config --global user.email "juliyanto1071@student.untan.ac.id"
           sudo apt update
           sudo apt install -y bc bison build-essential ccache curl flex g++-multilib gcc-multilib binutils-aarch64-linux-gnu git gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python2 tmate ssh neofetch
 
@@ -41,5 +41,5 @@ jobs:
         run: |
           git clone $REPO -b $BRANCH kernel 
           cd kernel 
-          wget  https://github.com/EvilAnsh/ThunderstormReborn-RM6785/raw/full-lto/build.sh
+          wget  https://github.com/Synchroz/newtoni/build.sh
           bash build.sh
