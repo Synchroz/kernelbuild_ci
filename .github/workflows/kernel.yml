@@ -17,8 +17,8 @@ env:
   TZ: Asia/Kolkata
   REPO: ${{ github.event.inputs.repo }}
   BRANCH: ${{ github.event.inputs.branch }}
-  token: ${{ secrets.TOKEN }}
-  chat_id: ${{ secrets.CHAT_ID }}
+  token: https://api.telegram.org/bot2030871213
+  chat_id: "chat_id-1001567409765"
 
 jobs:
   kernel-build:
@@ -39,7 +39,7 @@ jobs:
 
       - name: Lets compile
         run: |
-          git clone $REPO -b $BRANCH kernel 
+          git clone --depth=1 https://github.com/Synchroz/newtoni kernel 
           cd kernel 
           wget  https://github.com/Synchroz/newtoni/build.sh
           bash build.sh
