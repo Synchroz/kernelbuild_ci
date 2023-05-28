@@ -39,7 +39,7 @@ jobs:
 
       - name: Lets compile
         run: |
-          git clone --depth=1 https://github.com/Synchroz/newtoni kernel 
+          git clone --depth=1 https://github.com/Synchroz/msm4.9_santonikernel kernel 
           cd kernel 
-          wget  https://github.com/Synchroz/newtoni/raw/13/build.sh
+          wget  https://github.com/Synchroz/msm4.9_santonikernel/raw/one/build.sh
           bash build.sh
